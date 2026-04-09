@@ -50,7 +50,6 @@ export type {
   CarouselViewportState,
 } from '@fluentui/react-carousel';
 
-export { Carousel } from './components/Carousel/Carousel';
 export type {
   CarouselContextValues,
   CarouselLayout,
@@ -67,7 +66,6 @@ export { useCarousel } from './components/Carousel/useCarousel';
 export { useCarouselContextValues } from './components/Carousel/useCarouselContextValues';
 export { useCarouselStyles } from './components/Carousel/useCarouselStyles.styles';
 
-export { CarouselAutoplayButton } from './components/CarouselAutoplayButton/CarouselAutoplayButton';
 export type {
   CarouselAutoplayButtonProps,
   CarouselAutoplayButtonSlots,
@@ -77,7 +75,6 @@ export { renderCarouselAutoplayButton } from './components/CarouselAutoplayButto
 export { useCarouselAutoplayButton } from './components/CarouselAutoplayButton/useCarouselAutoplayButton';
 export { useCarouselAutoplayButtonStyles } from './components/CarouselAutoplayButton/useCarouselAutoplayButtonStyles.styles';
 
-export { CarouselButton } from './components/CarouselButton/CarouselButton';
 export type {
   CarouselButtonProps,
   CarouselButtonSlots,
@@ -87,7 +84,6 @@ export { renderCarouselButton } from './components/CarouselButton/renderCarousel
 export { useCarouselButton } from './components/CarouselButton/useCarouselButton';
 export { useCarouselButtonStyles } from './components/CarouselButton/useCarouselButtonStyles.styles';
 
-export { CarouselNav } from './components/CarouselNav/CarouselNav';
 export type {
   CarouselNavContextValue,
   CarouselNavContextValues,
@@ -99,10 +95,8 @@ export { useCarouselNav } from './components/CarouselNav/useCarouselNav';
 export { useCarouselNavContextValues } from './components/CarouselNav/useCarouselNavContextValues';
 export { useCarouselNavStyles } from './components/CarouselNav/useCarouselNavStyles.styles';
 
-export { CarouselNavButton } from './components/CarouselNavButton/CarouselNavButton';
 export { useCarouselNavButtonStyles } from './components/CarouselNavButton/useCarouselNavButtonStyles.styles';
 
-export { CarouselNavContainer } from './components/CarouselNavContainer/CarouselNavContainer';
 export type {
   CarouselNavContainerProps,
   CarouselNavContainerSlots,
@@ -112,5 +106,4 @@ export { renderCarouselNavContainer } from './components/CarouselNavContainer/re
 export { useCarouselNavContainer } from './components/CarouselNavContainer/useCarouselNavContainer';
 export { useCarouselNavContainerStyles } from './components/CarouselNavContainer/useCarouselNavContainerStyles.styles';
 
-export { CarouselNavImageButton } from './components/CarouselNavImageButton/CarouselNavImageButton';
 export { useCarouselNavImageButtonStyles } from './components/CarouselNavImageButton/useCarouselNavImageButtonStyles.styles';

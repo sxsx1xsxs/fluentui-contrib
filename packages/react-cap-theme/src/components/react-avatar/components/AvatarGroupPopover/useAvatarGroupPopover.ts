@@ -1,7 +1,7 @@
 import { useAvatarGroupPopover_unstable } from '@fluentui/react-avatar';
+import { PopoverSurface } from '@fluentui/react-popover';
+import { Tooltip } from '@fluentui/react-tooltip';
 import { slot } from '@fluentui/react-utilities';
-import { PopoverSurface } from '../../../react-popover';
-import { Tooltip } from '../../../react-tooltip';
 import type {
   AvatarGroupPopoverProps,
   AvatarGroupPopoverState,

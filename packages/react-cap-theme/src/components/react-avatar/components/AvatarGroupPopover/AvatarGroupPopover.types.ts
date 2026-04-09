@@ -3,13 +3,13 @@ import type {
   AvatarGroupPopoverSlots as FluentAvatarGroupPopoverSlots,
   AvatarGroupPopoverState as FluentAvatarGroupPopoverState,
 } from '@fluentui/react-avatar';
+import type { PopoverSurface } from '@fluentui/react-popover';
+import type { TooltipProps } from '@fluentui/react-tooltip';
 import type {
   ComponentProps,
   ComponentState,
   Slot,
 } from '@fluentui/react-utilities';
-import type { PopoverSurface } from '../../../react-popover';
-import type { TooltipProps } from '../../../react-tooltip';
 
 export type AvatarGroupPopoverSlots = Omit<
   FluentAvatarGroupPopoverSlots,

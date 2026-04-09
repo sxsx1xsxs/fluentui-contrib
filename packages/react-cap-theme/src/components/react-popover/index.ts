@@ -27,5 +27,4 @@ export type {
   PopoverTriggerState,
 } from '@fluentui/react-popover';
 
-export { PopoverSurface } from './components/PopoverSurface/PopoverSurface';
 export { usePopoverSurfaceStyles_unstable as usePopoverSurfaceStyles } from './components/PopoverSurface/usePopoverSurfaceStyles.styles';

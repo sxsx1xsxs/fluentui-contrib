@@ -55,9 +55,7 @@ export type {
   AccordionToggleEventHandler,
 } from '@fluentui/react-accordion';
 
-export { AccordionHeader } from './components/AccordionHeader/AccordionHeader';
 export { useAccordionHeader } from './components/AccordionHeader/useAccordionHeader';
 export { useAccordionHeaderStyles } from './components/AccordionHeader/useAccordionHeaderStyles.styles';
 
-export { AccordionPanel } from './components/AccordionPanel/AccordionPanel';
 export { useAccordionPanelStyles } from './components/AccordionPanel/useAccordionPanelStyles.styles';

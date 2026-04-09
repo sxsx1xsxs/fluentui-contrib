@@ -4,7 +4,6 @@ export {
 } from '@fluentui/react-checkbox';
 export type { CheckboxOnChangeData } from '@fluentui/react-checkbox';
 
-export { Checkbox } from './components/Checkbox/Checkbox';
 export type {
   CheckboxProps,
   CheckboxSlots,

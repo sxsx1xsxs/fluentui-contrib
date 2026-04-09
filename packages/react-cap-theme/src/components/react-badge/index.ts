@@ -32,5 +32,4 @@ export type {
   PresenceBadgeState,
   PresenceBadgeStatus,
 } from '@fluentui/react-badge';
-export { Badge } from './components/Badge/Badge';
 export { useBadgeStyles } from './components/Badge/useBadgeStyles.styles';

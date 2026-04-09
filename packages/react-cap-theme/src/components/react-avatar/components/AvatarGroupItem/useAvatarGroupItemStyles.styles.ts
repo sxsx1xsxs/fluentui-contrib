@@ -1,4 +1,3 @@
-import { useAvatarGroupItemStyles_unstable } from '@fluentui/react-avatar';
 import { getSlotClassNameProp_unstable } from '@fluentui/react-utilities';
 import { tokens } from '../../../tokens';
 import { makeStyles, mergeClasses } from '@griffel/react';
@@ -60,5 +59,5 @@ export const useAvatarGroupItemStyles = (
     rootStackClass,
     getSlotClassNameProp_unstable(state.root)
   );
-  return useAvatarGroupItemStyles_unstable(state);
+  return state;
 };

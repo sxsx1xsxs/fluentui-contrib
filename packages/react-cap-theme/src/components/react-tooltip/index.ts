@@ -8,7 +8,6 @@ export type {
   TooltipTriggerProps,
 } from '@fluentui/react-tooltip';
 
-export { Tooltip } from './components/Tooltip/Tooltip';
 export { useTooltip_unstable as useTooltip } from './components/Tooltip/useTooltip';
 export { useTooltipStyles_unstable as useTooltipStyles } from './components/Tooltip/useTooltipStyles.styles';
 export type {

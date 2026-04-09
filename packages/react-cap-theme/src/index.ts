@@ -19,14 +19,7 @@ import {
   type AvatarGroupItemState,
   type AvatarGroupPopoverState,
 } from './components/react-avatar';
-import {
-  useCounterBadgeStyles,
-  usePresenceBadgeStyles,
-  useBadgeStyles,
-  type CounterBadgeState,
-  type PresenceBadgeState,
-  type BadgeState,
-} from './components/react-badge';
+import { useBadgeStyles, type BadgeState } from './components/react-badge';
 import {
   useButtonStyles,
   useMenuButtonStyles,
@@ -38,9 +31,6 @@ import {
   type ToggleButtonState,
 } from './components/react-button';
 import {
-  useCarouselCardStyles,
-  useCarouselSliderStyles,
-  useCarouselViewportStyles,
   useCarouselStyles,
   useCarouselAutoplayButtonStyles,
   useCarouselButtonStyles,
@@ -48,9 +38,6 @@ import {
   useCarouselNavButtonStyles,
   useCarouselNavContainerStyles,
   useCarouselNavImageButtonStyles,
-  type CarouselCardState,
-  type CarouselSliderState,
-  type CarouselViewportState,
   type CarouselState,
   type CarouselAutoplayButtonState,
   type CarouselButtonState,
@@ -64,19 +51,16 @@ import {
   type CheckboxState,
 } from './components/react-checkbox';
 import {
-  useDialogContentStyles,
   useDialogTitleStyles,
   useDialogActionsStyles,
   useDialogBodyStyles,
   useDialogSurfaceStyles,
-  type DialogContentState,
   type DialogTitleState,
   type DialogActionsState,
   type DialogBodyState,
   type DialogSurfaceState,
 } from './components/react-dialog';
 import {
-  useDrawerStyles,
   useDrawerBodyStyles,
   useDrawerFooterStyles,
   useDrawerHeaderStyles,
@@ -84,7 +68,6 @@ import {
   useDrawerHeaderTitleStyles,
   useInlineDrawerStyles,
   useOverlayDrawerStyles,
-  type DrawerState,
   type DrawerBodyState,
   type DrawerFooterState,
   type DrawerHeaderState,
@@ -95,6 +78,22 @@ import {
 } from './components/react-drawer';
 import { useImageStyles, type ImageState } from './components/react-image';
 import { useLinkStyles, type LinkState } from './components/react-link';
+import {
+  useMenuDividerStyles,
+  useMenuGroupHeaderStyles,
+  useMenuItemStyles,
+  useMenuItemCheckboxStyles,
+  useMenuItemRadioStyles,
+  useMenuPopoverStyles,
+  useMenuSplitGroupStyles,
+  type MenuDividerState,
+  type MenuGroupHeaderState,
+  type MenuItemState,
+  type MenuItemCheckboxState,
+  type MenuItemRadioState,
+  type MenuPopoverState,
+  type MenuSplitGroupState,
+} from './components/react-menu';
 import {
   usePopoverSurfaceStyles,
   type PopoverSurfaceState,
@@ -140,11 +139,9 @@ export type {
 } from './components/react-accordion';
 export {
   Accordion,
-  AccordionHeader,
   AccordionHeaderProvider,
   AccordionItem,
   AccordionItemProvider,
-  AccordionPanel,
   AccordionProvider,
   accordionClassNames,
   accordionHeaderClassNames,
@@ -196,11 +193,8 @@ export type {
   PartitionAvatarGroupItemsOptions,
 } from './components/react-avatar';
 export {
-  Avatar,
   AvatarContextProvider,
   AvatarGroup,
-  AvatarGroupItem,
-  AvatarGroupPopover,
   AvatarGroupProvider,
   avatarClassNames,
   avatarGroupClassNames,
@@ -236,7 +230,6 @@ export type {
   PresenceBadgeStatus,
 } from './components/react-badge';
 export {
-  Badge,
   CounterBadge,
   PresenceBadge,
   badgeClassNames,
@@ -338,14 +331,7 @@ export type {
   CarouselViewportState,
 } from './components/react-carousel';
 export {
-  Carousel,
-  CarouselAutoplayButton,
-  CarouselButton,
   CarouselCard,
-  CarouselNav,
-  CarouselNavButton,
-  CarouselNavContainer,
-  CarouselNavImageButton,
   CarouselProvider,
   CarouselSlider,
   CarouselViewport,
@@ -401,7 +387,6 @@ export type {
   CheckboxState,
 } from './components/react-checkbox';
 export {
-  Checkbox,
   checkboxClassNames,
   renderCheckbox,
   useCheckbox,
@@ -440,12 +425,8 @@ export type {
 } from './components/react-dialog';
 export {
   Dialog,
-  DialogActions,
-  DialogBody,
   DialogContent,
   DialogProvider,
-  DialogSurface,
-  DialogTitle,
   DialogTrigger,
   dialogActionsClassNames,
   dialogBodyClassNames,
@@ -504,15 +485,7 @@ export type {
   OverlayDrawerState,
 } from './components/react-drawer';
 export {
-  Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerHeaderNavigation,
-  DrawerHeaderTitle,
   DrawerProvider,
-  InlineDrawer,
-  OverlayDrawer,
   drawerBodyClassNames,
   drawerFooterClassNames,
   drawerHeaderClassNames,
@@ -22795,7 +22768,6 @@ export type {
   ImageState,
 } from './components/react-image';
 export {
-  Image,
   imageClassNames,
   renderImage,
   useImage,
@@ -22803,7 +22775,6 @@ export {
 } from './components/react-image';
 export type { LinkProps, LinkSlots, LinkState } from './components/react-link';
 export {
-  Link,
   linkClassNames,
   renderLink,
   useLink,
@@ -22826,7 +22797,6 @@ export type {
 export {
   Popover,
   PopoverProvider,
-  PopoverSurface,
   PopoverTrigger,
   arrowHeights,
   popoverSurfaceClassNames,
@@ -22847,7 +22817,6 @@ export type {
   TooltipTriggerProps,
 } from './components/react-tooltip';
 export {
-  Tooltip,
   renderTooltip,
   tooltipClassNames,
   useTooltip,
@@ -22977,9 +22946,6 @@ export const CAP_STYLE_HOOKS: NonNullable<
   useCarouselButtonStyles_unstable: (state) => {
     return useCarouselButtonStyles(state as CarouselButtonState);
   },
-  useCarouselCardStyles_unstable: (state) => {
-    return useCarouselCardStyles(state as CarouselCardState);
-  },
   useCarouselNavButtonStyles_unstable: (state) => {
     return useCarouselNavButtonStyles(state as CarouselNavButtonState);
   },
@@ -22994,29 +22960,17 @@ export const CAP_STYLE_HOOKS: NonNullable<
   useCarouselNavStyles_unstable: (state) => {
     return useCarouselNavStyles(state as CarouselNavState);
   },
-  useCarouselSliderStyles_unstable: (state) => {
-    return useCarouselSliderStyles(state as CarouselSliderState);
-  },
   useCarouselStyles_unstable: (state) => {
     return useCarouselStyles(state as CarouselState);
   },
-  useCarouselViewportStyles_unstable: (state) => {
-    return useCarouselViewportStyles(state as CarouselViewportState);
-  },
   useCheckboxStyles_unstable: (state) => {
     return useCheckboxStyles(state as CheckboxState);
-  },
-  useCounterBadgeStyles_unstable: (state) => {
-    return useCounterBadgeStyles(state as CounterBadgeState);
   },
   useDialogActionsStyles_unstable: (state) => {
     return useDialogActionsStyles(state as DialogActionsState);
   },
   useDialogBodyStyles_unstable: (state) => {
     return useDialogBodyStyles(state as DialogBodyState);
-  },
-  useDialogContentStyles_unstable: (state) => {
-    return useDialogContentStyles(state as DialogContentState);
   },
   useDialogSurfaceStyles_unstable: (state) => {
     return useDialogSurfaceStyles(state as DialogSurfaceState);
@@ -23041,9 +22995,6 @@ export const CAP_STYLE_HOOKS: NonNullable<
   useDrawerHeaderTitleStyles_unstable: (state) => {
     return useDrawerHeaderTitleStyles(state as DrawerHeaderTitleState);
   },
-  useDrawerStyles_unstable: (state) => {
-    return useDrawerStyles(state as DrawerState);
-  },
   useImageStyles_unstable: (state) => {
     return useImageStyles(state as ImageState);
   },
@@ -23062,9 +23013,6 @@ export const CAP_STYLE_HOOKS: NonNullable<
   usePopoverSurfaceStyles_unstable: (state) => {
     return usePopoverSurfaceStyles(state as PopoverSurfaceState);
   },
-  usePresenceBadgeStyles_unstable: (state) => {
-    return usePresenceBadgeStyles(state as PresenceBadgeState);
-  },
   useSplitButtonStyles_unstable: (state) => {
     return useSplitButtonStyles(state as SplitButtonState);
   },
@@ -23073,5 +23021,26 @@ export const CAP_STYLE_HOOKS: NonNullable<
   },
   useTooltipStyles_unstable: (state) => {
     return useTooltipStyles(state as TooltipState);
+  },
+  useMenuDividerStyles_unstable: (state) => {
+    return useMenuDividerStyles(state as MenuDividerState);
+  },
+  useMenuGroupHeaderStyles_unstable: (state) => {
+    return useMenuGroupHeaderStyles(state as MenuGroupHeaderState);
+  },
+  useMenuItemStyles_unstable: (state) => {
+    return useMenuItemStyles(state as MenuItemState);
+  },
+  useMenuItemCheckboxStyles_unstable: (state) => {
+    return useMenuItemCheckboxStyles(state as MenuItemCheckboxState);
+  },
+  useMenuItemRadioStyles_unstable: (state) => {
+    return useMenuItemRadioStyles(state as MenuItemRadioState);
+  },
+  useMenuPopoverStyles_unstable: (state) => {
+    return useMenuPopoverStyles(state as MenuPopoverState);
+  },
+  useMenuSplitGroupStyles_unstable: (state) => {
+    return useMenuSplitGroupStyles(state as MenuSplitGroupState);
   },
 };

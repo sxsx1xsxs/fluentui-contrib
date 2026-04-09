@@ -58,15 +58,11 @@ export type {
   DialogTriggerState,
 } from '@fluentui/react-dialog';
 
-export { DialogActions } from './components/DialogActions/DialogActions';
 export { useDialogActionsStyles } from './components/DialogActions/useDialogActionsStyles.styles';
 
-export { DialogBody } from './components/DialogBody/DialogBody';
 export { useDialogBodyStyles } from './components/DialogBody/useDialogBodyStyles.styles';
 
-export { DialogSurface } from './components/DialogSurface/DialogSurface';
 export { useDialogSurfaceStyles } from './components/DialogSurface/useDialogSurfaceStyles.styles';
 
-export { DialogTitle } from './components/DialogTitle/DialogTitle';
 export type { DialogTitleProps } from './components/DialogTitle/DialogTitle.types';
 export { useDialogTitle } from './components/DialogTitle/useDialogTitle';

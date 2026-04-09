@@ -1,13 +1,13 @@
 import type {
   AvatarGroupItemSlots as FluentAvatarGroupItemSlots,
   AvatarGroupItemState as FluentAvatarGroupItemState,
+  Avatar,
 } from '@fluentui/react-avatar';
 import type {
   ComponentProps,
   ComponentState,
   Slot,
 } from '@fluentui/react-utilities';
-import type { Avatar } from '../Avatar/Avatar';
 
 export type AvatarGroupItemSlots = Omit<
   FluentAvatarGroupItemSlots,

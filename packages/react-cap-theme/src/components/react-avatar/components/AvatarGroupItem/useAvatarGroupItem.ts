@@ -1,6 +1,5 @@
-import { useAvatarGroupItem_unstable } from '@fluentui/react-avatar';
+import { useAvatarGroupItem_unstable, Avatar } from '@fluentui/react-avatar';
 import { slot } from '@fluentui/react-utilities';
-import { Avatar } from '../Avatar/Avatar';
 import type {
   AvatarGroupItemProps,
   AvatarGroupItemState,

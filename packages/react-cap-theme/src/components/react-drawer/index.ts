@@ -51,26 +51,19 @@ export type {
   OverlayDrawerState,
 } from '@fluentui/react-drawer';
 
-export { Drawer } from './components/Drawer/Drawer';
 export type { DrawerBaseState } from './components/Drawer/Drawer.types';
 export { useDrawer } from './components/Drawer/useDrawer';
 
-export { DrawerBody } from './components/DrawerBody/DrawerBody';
 export { useDrawerBodyStyles } from './components/DrawerBody/useDrawerBodyStyles.styles';
 
-export { DrawerFooter } from './components/DrawerFooter/DrawerFooter';
 export { useDrawerFooterStyles } from './components/DrawerFooter/useDrawerFooterStyles.styles';
 
-export { DrawerHeader } from './components/DrawerHeader/DrawerHeader';
 export { useDrawerHeaderStyles } from './components/DrawerHeader/useDrawerHeaderStyles.styles';
 
-export { DrawerHeaderNavigation } from './components/DrawerHeaderNavigation/DrawerHeaderNavigation';
 export { useDrawerHeaderNavigationStyles } from './components/DrawerHeaderNavigation/useDrawerHeaderNavigationStyles.styles';
 
-export { DrawerHeaderTitle } from './components/DrawerHeaderTitle/DrawerHeaderTitle';
 export { useDrawerHeaderTitleStyles } from './components/DrawerHeaderTitle/useDrawerHeaderTitleStyles.styles';
 
-export { InlineDrawer } from './components/InlineDrawer/InlineDrawer';
 export type {
   InlineDrawerProps,
   InlineDrawerState,
@@ -78,5 +71,4 @@ export type {
 export { useInlineDrawer } from './components/InlineDrawer/useInlineDrawer';
 export { useInlineDrawerStyles } from './components/InlineDrawer/useInlineDrawerStyles.styles';
 
-export { OverlayDrawer } from './components/OverlayDrawer/OverlayDrawer';
 export { useOverlayDrawerStyles } from './components/OverlayDrawer/useOverlayDrawerStyles.styles';

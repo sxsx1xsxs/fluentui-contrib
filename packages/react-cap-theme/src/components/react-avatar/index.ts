@@ -38,10 +38,8 @@ export type {
   PartitionAvatarGroupItemsOptions,
 } from '@fluentui/react-avatar';
 
-export { Avatar } from './components/Avatar/Avatar';
 export { useAvatarStyles } from './components/Avatar/useAvatarStyles.styles';
 
-export { AvatarGroupItem } from './components/AvatarGroupItem/AvatarGroupItem';
 export type {
   AvatarGroupItemProps,
   AvatarGroupItemSlots,
@@ -50,7 +48,6 @@ export type {
 export { useAvatarGroupItem } from './components/AvatarGroupItem/useAvatarGroupItem';
 export { useAvatarGroupItemStyles } from './components/AvatarGroupItem/useAvatarGroupItemStyles.styles';
 
-export { AvatarGroupPopover } from './components/AvatarGroupPopover/AvatarGroupPopover';
 export type {
   AvatarGroupPopoverProps,
   AvatarGroupPopoverSlots,
